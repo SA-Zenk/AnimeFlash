@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title Anime-Flash
+		link(rel="stylesheet", href="style.css")
+	body 
+		.pagina
+			.header
+				.header__container
+					a.header__inicio(href="#")
+						img.header__media(src="/imagenes/LogoA.png", alt="")
+						.header__titulo
+							span.header__texto AnimeFlash
+							span.header__barra
+					nav.nav
+						ul.nav__list
+							li.nav__item
+								a.nav__link(href="#")
+									span.nav__span Directorio
+										include ../iconos/libro-header.svg
+								a.nav__link(href="#") 
+									span.nav__span Emision 
+										include ../iconos/calendar-header.svg
+								a.nav__link(href="#")
+									span.nav__span Donar
+										include ../iconos/donar-header.svg
+								a.nav__link(href="#")
+									span.nav__span Noticias
+										include ../iconos/noticias-header.svg
+					.perfil
+						.perfil__imagen
+							img.perfil__icon(src="/imagenes/Onepice.png", alt="imagen perfil")
+						.perfil__flecha
+							span.perfil__span
+								include ../iconos/flecha-perfil.svg
+			.main
+				.main__container
+					.main__top
+						a.main__link(href="https://animeflash.xyz/anime/2301/tensei-shitara-slime-datta-ken-s2-part-2")
+							.main__background
+								.main__background--nublado
+									.main__animeinfo
+										.main__titulo
+											.main__nombre
+												span.main__anime Tensei shitara slime Datta
+								.main__contador
+									.main__simultaneo
+										span.main__next Proximo episodio
+										ul.main__lista
+											li.main__item
+												span.main__time 1 "Dias"
+											li.main__item 
+												span.main__time 4 "Horas"
+											li.main__item
+												span.main__time 18 "Minutos"
+											li.main__item
+												span.main__time 30 "Segundos"		
+					.main__fondo 
+						.main__Izquierda
+							.main__articulos
+								.main__faceboock
+									iframe(src="https://www.facebook.com/AnimeFlashJP/", width="100%" height="130" scrollin="no" allow="encrypted-media" frameborder="0")
+							.main__popular
+								img(src="/imagenes/famoso.png", width="100%")
+						.main__derecha 
+							.main__capitulos
+								.main__separador
+									span.main__reloj
+										include 
+											| Ultimos episiodios
+								.main__items
+									a.main__episodio(href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10") 
+										.media__card
+											.media__card--image
+												img(src="/imagenes/primero.jpg", alt="")
+											.media__fecha
+												span.media__numero "#" "10"
+											.media__title
+												span.media__noun Heion Sedai no Idanten
+											.main__barra
+												.main__efecto
+
+
