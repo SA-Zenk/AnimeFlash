@@ -1,11 +1,6 @@
 doctype html
 html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(http-equiv="X-UA-Compatible", content="IE=edge")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Anime-Flash
-		link(rel="stylesheet", href="style.css")
+	include ./pug/head
 	body 
 		.pagina
 			.header
@@ -38,26 +33,23 @@ html(lang="en")
 								include ../iconos/flecha-perfil.svg
 			.main
 				.main__container
-					.main__top
-						a.main__link(href="https://animeflash.xyz/anime/2301/tensei-shitara-slime-datta-ken-s2-part-2")
-							.main__background
-								.main__background--nublado
-									.main__animeinfo
-										.main__titulo
-											.main__nombre
-												span.main__anime Tensei shitara slime Datta
-								.main__contador
-									.main__simultaneo
-										span.main__next Proximo episodio
-										ul.main__lista
-											li.main__item
-												span.main__time 1 "Dias"
-											li.main__item 
-												span.main__time 4 "Horas"
-											li.main__item
-												span.main__time 18 "Minutos"
-											li.main__item
-												span.main__time 30 "Segundos"		
+					.hero
+						h2.hero__title Tensei shitara slime Datta
+						.counter
+							p.counter__text Proximo episodio:
+								ul.counter__container
+									li.counter__item
+										p.counter__number 0 
+										p.counter__type Días	
+									li.counter__item
+										p.counter__number 21 
+										p.counter__type Horas	
+									li.counter__item
+										p.counter__number 17 
+										p.counter__type Minutos	
+									li.counter__item
+										p.counter__number 56 
+										p.counter__type Segundos		
 					.main__fondo 
 						.main__Izquierda
 							.main__articulos
@@ -69,7 +61,6 @@ html(lang="en")
 							.main__capitulos
 								.main__separador
 									span.main__reloj
-										include 
 											| Ultimos episiodios
 								.main__items
 									a.main__episodio(href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10") 
@@ -82,5 +73,20 @@ html(lang="en")
 												span.media__noun Heion Sedai no Idanten
 											.main__barra
 												.main__efecto
+		.counter.counter--botom
+			p.counter__text Proximo episodio:
+				ul.counter__container
+					li.counter__item
+						p.counter__number 0 
+						p.counter__type Días	
+					li.counter__item
+						p.counter__number 21 
+						p.counter__type Horas	
+					li.counter__item
+						p.counter__number 17 
+						p.counter__type Minutos	
+					li.counter__item
+						p.counter__number 56 
+						p.counter__type Segundos	
 
 
