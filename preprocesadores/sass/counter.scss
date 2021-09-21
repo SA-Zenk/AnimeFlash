@@ -1,0 +1,36 @@
+.counter {
+	position: relative;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&--botom {
+		font-size: 5px;
+	}
+
+	&__text {
+		font-size: 1em;
+	}
+
+	&__container {
+		display: flex;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1em;
+	}
+
+	&__number {
+		font-size: 2em;
+	}
+
+	&__type {
+		font-size: 1em;
+
+	}
+}

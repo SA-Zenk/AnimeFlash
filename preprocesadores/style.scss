@@ -1,8 +1,6 @@
-body {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
+@import "./sass/reset.scss";
+@import "./sass/hero.scss";
+@import "./sass/counter.scss";
 
 .pagina {
 	background: #303d4f
@@ -268,7 +266,7 @@ body {
 		bottom: 25px;
 		padding: 3px;
 		border-radius: 4px;
-		background:#2b7fa8;
+		background: #2b7fa8;
 		color: #fff;
 		font-size: 13px;
 	}
@@ -283,7 +281,7 @@ body {
 		left: 0;
 		right: 0;
 		padding: 2px 0;
-		background:rgba(39, 50, 66, .6);
+		background: rgba(39, 50, 66, .6);
 		font-size: 14px;
 		font-weight: 700;
 		text-align: left;
