@@ -1,12 +1,19 @@
 doctype html
-html(lang="en")
-	include ./pug/head
-	body 
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title Anime-Flash
+		link(rel='stylesheet' href='')
+		link(rel='stylesheet' href='style.css')
+	body
 		.pagina
 			.header
 				.header__container
-					a.header__inicio(href="#")
-						img.header__media(src="/imagenes/LogoA.png", alt="")
+					a.header__inicio(href='#')
+						img.header__media(src='/imagenes/LogoA.png' alt='')
+						img.header__menu-svg(src="/iconos/Icon_menu_header.svg", alt="")
 						.header__titulo
 							span.header__texto AnimeFlash
 							span.header__barra
@@ -14,79 +21,72 @@ html(lang="en")
 						ul.nav__list
 							li.nav__item
 								a.nav__link(href="#")
-									span.nav__span Directorio
-										include ../iconos/libro-header.svg
+									include ../iconos/libro-header.svg
+									| Directorio
 								a.nav__link(href="#") 
-									span.nav__span Emision 
+									span.nav__span 
 										include ../iconos/calendar-header.svg
+										|	Emision 
 								a.nav__link(href="#")
-									span.nav__span Donar
+									span.nav__span 
 										include ../iconos/donar-header.svg
+										| Donar
 								a.nav__link(href="#")
-									span.nav__span Noticias
+									span.nav__span 
 										include ../iconos/noticias-header.svg
+										|	Noticias
 					.perfil
 						.perfil__imagen
-							img.perfil__icon(src="/imagenes/Onepice.png", alt="imagen perfil")
+							img.perfil__icon(src='/imagenes/Onepice.png' alt='imagen perfil')
 						.perfil__flecha
-							span.perfil__span
 								include ../iconos/flecha-perfil.svg
 			.main
 				.main__container
 					.hero
-						h2.hero__title Tensei shitara slime Datta
+						h2.hero__title Tensei shitara slime 
 						.counter
 							p.counter__text Proximo episodio:
-								ul.counter__container
-									li.counter__item
-										p.counter__number 0 
-										p.counter__type Días	
-									li.counter__item
-										p.counter__number 21 
-										p.counter__type Horas	
-									li.counter__item
-										p.counter__number 17 
-										p.counter__type Minutos	
-									li.counter__item
-										p.counter__number 56 
-										p.counter__type Segundos		
-					.main__fondo 
+							ul.counter__container
+								li.counter__item
+									p.counter__number 0 
+									p.counter__type Días 
+								li.counter__item
+									p.counter__number 21 
+									p.counter__type Horas 
+								li.counter__item
+									p.counter__number 17 
+									p.counter__type Minutos 
+								li.counter__item
+									p.counter__number 56 
+									p.counter__type Segundos 
+							p
+					.main__fondo
 						.main__Izquierda
 							.main__articulos
 								.main__faceboock
-									iframe(src="https://www.facebook.com/AnimeFlashJP/", width="100%" height="130" scrollin="no" allow="encrypted-media" frameborder="0")
+									iframe(src='https://www.facebook.com/AnimeFlashJP/' width='100%' height='130' scrollin='no' allow='encrypted-media' frameborder='0')
 							.main__popular
-								img(src="/imagenes/famoso.png", width="100%")
-						.main__derecha 
-							.main__capitulos
-								.main__separador
-									span.main__reloj
-											| Ultimos episiodios
-								.main__items
-									a.main__episodio(href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10") 
-										.media__card
-											.media__card--image
-												img(src="/imagenes/primero.jpg", alt="")
-											.media__fecha
-												span.media__numero "#" "10"
-											.media__title
-												span.media__noun Heion Sedai no Idanten
-											.main__barra
-												.main__efecto
-		.counter.counter--botom
-			p.counter__text Proximo episodio:
-				ul.counter__container
-					li.counter__item
-						p.counter__number 0 
-						p.counter__type Días	
-					li.counter__item
-						p.counter__number 21 
-						p.counter__type Horas	
-					li.counter__item
-						p.counter__number 17 
-						p.counter__type Minutos	
-					li.counter__item
-						p.counter__number 56 
-						p.counter__type Segundos	
-
-
+								img.main__img-popular(src='/imagenes/famoso.png' width='100%')
+						.main__derecha
+							.main__separador
+								img.main__separador-svg(src=".iconos/Icon_derecha_reloj.svg", alt="")
+								span.main__separador-text Ultimos episiodios
+							.main__items
+								a.main__episodio(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
+									.media__card
+											img.media__card-img(src='/imagenes/primero.jpg' alt='')
+												.media__fecha
+													span.media__numero "#" "10"
+												.media__title
+													span.media__noun Heion Sedai no Idanten
+												.main__barra
+													.main__efecto
+								a.main__episodio(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
+									.media__card
+											img.media__card-img(src='/imagenes/primero.jpg' alt='')
+												.media__fecha
+													span.media__numero "#" "10"
+												.media__title
+													span.media__noun Heion Sedai no Idanten
+												.main__barra
+													.main__efecto

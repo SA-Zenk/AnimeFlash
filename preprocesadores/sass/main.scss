@@ -1,0 +1,223 @@
+.main {
+
+
+	&__container {
+		width: 100%;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__background {
+		background-image: url(../imagenes/slime.jpg);
+	}
+
+	&__background--nublado::after {
+		// content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #13131367;
+		z-index: 1;
+	}
+
+	&__animeinfo {
+		display: flex;
+		padding: 25px 10px;
+	}
+
+	&__titulo {
+		align-items: center;
+		width: 60%;
+		justify-content: center;
+	}
+
+	&__nombre {
+		font-size: 1.3em;
+	}
+
+	&__contador {
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__simultaneo {
+		text-align: center;
+		margin: 15px auto;
+	}
+
+	&__next {
+		font-weight: 400;
+	}
+
+	&__lista {
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+		font-size: 1em;
+		list-style-type: none;
+		padding: 1em;
+		text-transform: uppercase;
+	}
+
+	&__time {
+		display: block;
+		font-size: 2em;
+	}
+
+	&__fondo {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: flex-start;
+	}
+
+	&__izquierda {
+		width: 350px;
+		max-width: 30%;
+		margin-top: 20px;
+		display: none;
+	}
+
+	&__articulos {
+		margin: 5px auto;
+		max-width: 95%;
+		display: none;
+	}
+
+	&__faceboock {
+		margin-bottom: 15px;
+		display: none;
+	}
+
+	&__img-popular {
+		display: none;
+	}
+
+	&__derecha {
+		width: 100%;
+
+	}
+
+	&__separador {
+		margin: 20px;
+		color: #fff;
+		padding: 5px 10px;
+		border-bottom: 2px solid #273242;
+	}
+
+	&__separador-text {
+		font-size: 17px;
+		font-family: sans-serif;
+
+	}
+
+	&__separador-svg {
+		height: 17px;
+		width: 17px;
+		padding-right: 5px;
+		color: #fff;
+		font-size: 17px;
+	}
+
+	&__items {
+		display: grid;
+		gap: 8px;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		border: 1px solid transparent;
+		position: relative;
+	}
+
+	&__episodio {
+		margin-bottom: 10px;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__card {
+		width: 220px;
+		height: 130px;
+		background: #273242;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		transition: 1s linear;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	&__card-img {
+		height: inherit;
+		width: inherit;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__fecha {
+		position: absolute;
+		right: 2px;
+		bottom: 25px;
+		padding: 3px;
+		border-radius: 4px;
+		background: #2b7fa8;
+		color: #fff;
+		font-size: 13px;
+	}
+
+	&__numero {
+		margin-right: 5px;
+	}
+
+	&__title {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 2px 0;
+		background: rgba(39, 50, 66, .6);
+		font-size: 14px;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	&__noun {
+		overflow: hidden;
+		white-space: nowrap;
+		display: inline-block;
+		width: 95%;
+		margin-left: 5px;
+		text-overflow: ellipsis;
+	}
+
+	&__barra {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		background: #273242;
+	}
+
+	&__efecto {
+		background: #2b7fa8;
+		width: 0;
+		transition: .5s;
+		height: inherit;
+		margin: 0 auto;
+	}
+}
