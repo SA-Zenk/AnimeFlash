@@ -5,10 +5,15 @@
 	margin-left: 0;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
+	position: absolute;
+	flex-direction: column;
+	top: 50px;
+	left: 0;
+	z-index: 100;
+	background-color: aqua;
 
 	&__list {
 		list-style: none;
-
 	}
 
 	&__item {

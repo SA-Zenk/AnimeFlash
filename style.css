@@ -133,6 +133,10 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .hero {
   width: 100%;
   background: url("../imagenes/slime.jpg") no-repeat center;
@@ -204,18 +208,18 @@ table {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 5px;
   display: flex;
   align-items: center;
   height: 60px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
 }
 .header__container {
-  max-width: 90%;
-  margin: 0 auto;
-  align-items: center;
   display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
   position: relative;
+  width: 100%;
 }
 .header__inicio {
   display: flex;
@@ -227,13 +231,17 @@ table {
   height: 3.4375em;
   float: left;
 }
+.header__menu {
+  padding: 10px;
+}
+.header__menu:hover ~ .nav {
+  display: flex;
+}
 .header__menu-svg {
-  width: 23px;
   height: 20px;
+  width: 20px;
   color: #fff;
   cursor: pointer;
-  padding: 0 20px;
-  order: -1;
 }
 .header__titulo {
   display: flex;
@@ -261,6 +269,12 @@ table {
   margin-left: 0;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  position: absolute;
+  flex-direction: column;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  background-color: aqua;
 }
 .nav__list {
   list-style: none;
@@ -297,7 +311,7 @@ table {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  gap: 22px;
+  gap: 10px;
 }
 .perfil__icon {
   border-radius: 13px;
@@ -309,7 +323,6 @@ table {
   width: 20px;
   color: #fff;
   transform: rotate(90deg);
-  transform-origin: left;
 }
 
 .main__container {
@@ -416,6 +429,7 @@ table {
 .main__items {
   display: grid;
   gap: 8px;
+  justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-content: center;
   width: 100%;
