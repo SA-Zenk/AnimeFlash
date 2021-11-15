@@ -3,18 +3,18 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 0 5px;
 	display: flex;
 	align-items: center;
 	height: 60px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
 
 	&__container {
-		max-width: 90%;
-		margin: 0 auto;
-		align-items: center;
 		display: flex;
+		justify-content: space-between;
+		padding: 0 30px;
+		align-items: center;
 		position: relative;
+		width: 100%;
 	}
 
 	&__inicio {
@@ -29,13 +29,19 @@
 		float: left;
 	}
 
+	&__menu {
+		padding: 10px;
+
+		&:hover~.nav {
+			display: flex;
+		}
+	}
+
 	&__menu-svg {
-		width: 23px;
 		height: 20px;
+		width: 20px;
 		color: #fff;
 		cursor: pointer;
-		padding: 0 20px;
-		order: -1;
 	}
 
 	&__titulo {

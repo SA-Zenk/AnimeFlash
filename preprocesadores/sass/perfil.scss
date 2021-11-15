@@ -3,7 +3,7 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	gap: 22px;
+	gap: 10px;
 
 	&__icon {
 		border-radius: 13px;
@@ -16,6 +16,5 @@
 		width: 20px;
 		color: #fff;
 		transform: rotate(90deg);
-		transform-origin: left;
 	}
 }
