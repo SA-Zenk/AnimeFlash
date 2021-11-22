@@ -199,7 +199,7 @@ table {
   font-size: 1em;
 }
 
-.pagina {
+.page {
   background: #303d4f;
 }
 
@@ -236,6 +236,10 @@ table {
 }
 .header__menu:hover ~ .nav {
   display: flex;
+  min-width: 50vw;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .header__menu-svg {
   height: 20px;
@@ -243,18 +247,24 @@ table {
   color: #fff;
   cursor: pointer;
 }
-.header__titulo {
+.header__clouse-svg {
+  height: 20px;
+  width: 20px;
+  color: #fff;
+  display: none;
+}
+.header__title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header__texto {
+.header__text {
   color: white;
   padding: 0 10px;
   font-size: 1.5em;
   text-decoration: none;
 }
-.header__barra {
+.header__bar {
   height: 5px;
   width: 118px;
   background: #2b7fa8;
@@ -274,7 +284,7 @@ table {
   top: 50px;
   left: 0;
   z-index: 100;
-  background-color: aqua;
+  background-color: #273242;
 }
 .nav__list {
   list-style: none;
@@ -284,15 +294,13 @@ table {
 }
 .nav__link {
   text-decoration: none;
-  font-size: 13px;
+  font-size: 17px;
   display: inline-block;
   align-items: center;
   flex-direction: column;
-  height: inherit;
-  padding: 7px 13px;
+  padding: 17px 13px;
   color: #fff;
   transition: 0.7s;
-  margin: 0 5px;
 }
 .nav__span {
   font-size: 16px;
@@ -302,27 +310,54 @@ table {
   width: 100%;
 }
 .nav__icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  color: white;
 }
 
-.perfil {
+.profile {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   gap: 10px;
 }
-.perfil__icon {
+.profile:hover.profile__login {
+  display: flex;
+  min-width: 50vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 35px;
+  z-index: 200;
+}
+.profile__icon {
   border-radius: 13px;
   height: 50px;
   width: 50px;
 }
-.perfil__flecha {
-  height: 20px;
+.profile__login {
+  display: none;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+.profile__login-icon {
+  height: 18px;
+  width: 20px;
+}
+.profile__text {
+  font-size: 16px;
+  color: #Ffffff;
+  padding: 5px;
+}
+.profile__flecha {
+  height: 18px;
   width: 20px;
   color: #fff;
   transform: rotate(90deg);
+}
+.profile:hover.__flecha {
+  transform: rotateY(270deg);
 }
 
 .main__container {
@@ -437,7 +472,7 @@ table {
   border: 1px solid transparent;
   position: relative;
 }
-.main__episodio {
+.main__episode {
   margin-bottom: 10px;
   text-decoration: none;
   color: #fff;
@@ -464,7 +499,7 @@ table {
   align-items: center;
   justify-content: center;
 }
-.main__fecha {
+.main__date {
   position: absolute;
   right: 2px;
   bottom: 25px;
@@ -473,9 +508,6 @@ table {
   background: #2b7fa8;
   color: #fff;
   font-size: 13px;
-}
-.main__numero {
-  margin-right: 5px;
 }
 .main__title {
   position: absolute;
@@ -488,15 +520,7 @@ table {
   font-weight: 700;
   text-align: left;
 }
-.main__noun {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  width: 95%;
-  margin-left: 5px;
-  text-overflow: ellipsis;
-}
-.main__barra {
+.main__bar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -504,7 +528,7 @@ table {
   height: 0;
   background: #273242;
 }
-.main__efecto {
+.main__effect {
   background: #2b7fa8;
   width: 0;
   transition: 0.5s;

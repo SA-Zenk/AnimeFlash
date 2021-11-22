@@ -139,7 +139,7 @@
 		position: relative;
 	}
 
-	&__episodio {
+	&__episode {
 		margin-bottom: 10px;
 		text-decoration: none;
 		color: #fff;
@@ -169,7 +169,7 @@
 		justify-content: center;
 	}
 
-	&__fecha {
+	&__date {
 		position: absolute;
 		right: 2px;
 		bottom: 25px;
@@ -178,10 +178,6 @@
 		background: #2b7fa8;
 		color: #fff;
 		font-size: 13px;
-	}
-
-	&__numero {
-		margin-right: 5px;
 	}
 
 	&__title {
@@ -196,16 +192,8 @@
 		text-align: left;
 	}
 
-	&__noun {
-		overflow: hidden;
-		white-space: nowrap;
-		display: inline-block;
-		width: 95%;
-		margin-left: 5px;
-		text-overflow: ellipsis;
-	}
 
-	&__barra {
+	&__bar {
 		position: absolute;
 		bottom: 0;
 		left: 0;
@@ -214,7 +202,7 @@
 		background: #273242;
 	}
 
-	&__efecto {
+	&__effect {
 		background: #2b7fa8;
 		width: 0;
 		transition: .5s;

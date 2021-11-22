@@ -1,5 +1,5 @@
 include ./pug/IconArrow.pug
-
+include ./pug/main_items.pug
 doctype html
 html(lang='en')
 	head
@@ -9,18 +9,19 @@ html(lang='en')
 		title Anime-Flash
 		link(rel='stylesheet' href='style.css')
 	body
-		.pagina
+		.page
 			.header
 				.header__container
 					.header__menu
 						img.header__menu-svg(src="/iconos/Icon_menu_header.svg", alt="")
+						img.header__clouse-svg(src="/iconos/Icon_nav_clouse.svg", alt="")
 					img.header__media(src='/imagenes/LogoA.png' alt='')
-					.header__titulo
-						span.header__texto AnimeFlash
-						span.header__barra
+					.header__title
+						span.header__text AnimeFlash
+						span.header__bar
 					nav.nav
 						a.nav__link(href="#")
-							include ../iconos/libro-header.svg
+							img.nav__icon(src="iconos/libro-header.svg", alt="")
 							| Directorio
 						a.nav__link(href="#") 
 							span.nav__span 
@@ -34,9 +35,12 @@ html(lang='en')
 							span.nav__span 
 								include ../iconos/noticias-header.svg
 								|	Noticias
-					.perfil
-						img.perfil__icon(src='/imagenes/Onepice.png' alt='imagen perfil')
-						+IconArrow(class="perfil__flecha")
+					.profile
+						img.profile__icon(src='/imagenes/Onepice.png' alt='imagen perfil')
+						+IconArrow(class="profile__flecha")
+						.profile__login
+							img.profile__login-icon(src="/iconos/Icon_perfil_login.svg", alt="")
+							p.profile__text Iniciar sesion
 			.main
 				.main__container
 					.hero
@@ -68,39 +72,25 @@ html(lang='en')
 								img.main__separador-svg(src=".iconos/Icon_derecha_reloj.svg", alt="")
 								span.main__separador-text Ultimos episiodios
 							.main__items
-								a.main__episodio(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
+								+item("main__episode,media__card-img,# 10,Heion Sedai no Idanten")
+								a.main__episode(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
 									.media__card
 										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										.media__fecha
-											span.media__numero "#" "10"
-										.media__title
-											span.media__noun Heion Sedai no Idanten
-										.main__barra
-											.main__efecto
-								a.main__episodio(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
+										p.media__date "#" "10"
+										p.media__title Heion Sedai no Idanten
+										.main__bar
+											.main__effect
+								a.main__episode(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
 									.media__card
 										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										.media__fecha
-											span.media__numero "#" "10"
-										.media__title
-											span.media__noun Heion Sedai no Idanten
-										.main__barra
-											.main__efecto
-								a.main__episodio(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
+										p.media__date "#" "10"
+										p.media__title Heion Sedai no Idanten
+										.main__bar
+											.main__effect
+								a.main__episode(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
 									.media__card
 										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										.media__fecha
-											span.media__numero "#" "10"
-										.media__title
-											span.media__noun Heion Sedai no Idanten
-										.main__barra
-											.main__efecto
-								a.main__episodio(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
-									.media__card
-										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										.media__fecha
-											span.media__numero "#" "10"
-										.media__title
-											span.media__noun Heion Sedai no Idanten
-										.main__barra
-											.main__efecto
+										p.media__date "#" "10"
+										p.media__title Heion Sedai no Idanten
+										.main__bar
+											.main__effect
