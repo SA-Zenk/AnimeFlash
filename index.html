@@ -1,99 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime-Flash</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="page">
-      <div class="header">
-        <div class="header__container">
-          <div class="header__menu"><img class="header__menu-svg" src="/iconos/Icon_menu_header.svg" alt=""><img class="header__clouse-svg" src="/iconos/Icon_nav_clouse.svg" alt=""></div><img class="header__media" src="/imagenes/LogoA.png" alt="">
-          <div class="header__title"><span class="header__text">AnimeFlash</span><span class="header__bar"></span></div>
-          <nav class="nav"><a class="nav__link" href="#"><img class="nav__icon" src="iconos/libro-header.svg" alt="">Directorio</a><a class="nav__link" href="#"> <span class="nav__span">
-                 <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Google Calendar</title><path d="M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z"/></svg>	Emision </span></a><a class="nav__link" href="#"><span class="nav__span">
-                 <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Bitcoin</title><path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"/></svg>Donar</span></a><a class="nav__link" href="#"><span class="nav__span">
-                 <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Files</title><path d="M12.367 2.453a.822.822 0 0 0-.576.238L.241 14.213a.822.822 0 0 0-.241.584v.066c0-.323.209-.608.516-.709l7.275-2.318a2.437 2.437 0 0 0 1.584-1.592l2.318-7.267a.757.757 0 0 1 .719-.524zM0 14.863v5.047c0 .904.733 1.637 1.637 1.637h20.726c.904 0 1.637-.733 1.637-1.637V4.09c0-.904-.733-1.637-1.637-1.637h-9.951v.5l.088 9.861c.01 1.175-.962 2.14-2.137 2.14L0 14.862zM12 3.66l-2.148 6.735v.001a2.94 2.94 0 0 1-1.909 1.916l-6.716 2.141h9.136c.905 0 1.638-.734 1.637-1.639zm-10.363.975c-.905 0-1.638.734-1.637 1.638v7.473l9.135-9.111Z"/></svg>	Noticias</span></a></nav>
-          <div class="profile"><img class="profile__icon" src="/imagenes/Onepice.png" alt="imagen perfil">
-            <svg class="profile__flecha" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path d="M23.297 14.74L.434 24v-5.263L16.8 12.11l6.497 2.631zm.27-5.371L.433 0v5.263l23.132 9.368V9.37z"></path>
-            </svg>
-            <div class="profile__login"><img class="profile__login-icon" src="/iconos/Icon_perfil_login.svg" alt="">
-              <p class="profile__text">Iniciar sesion</p>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime-Flash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="header__container">
+        <div class="header__menu"><img class="header__menu-svg" src="/iconos/Icon_menu_header.svg" alt=""><img
+            class="header__clouse-svg" src="/iconos/Icon_nav_clouse.svg" alt=""></div><img class="header__media"
+          src="/imagenes/LogoA.png" alt="">
+        <div class="header__title"><span class="header__text">AnimeFlash</span><span class="header__bar"></span></div>
+        <nav class="nav"><a class="nav__link" href="#"><img class="nav__icon" src="iconos/libro-header.svg"
+              alt="">Directorio</a><a class="nav__link" href="#"> <span class="nav__span">
+              <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor">
+                <title>Google Calendar</title>
+                <path
+                  d="M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z" />
+              </svg> Emision </span></a><a class="nav__link" href="#"><span class="nav__span">
+              <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor">
+                <title>Bitcoin</title>
+                <path
+                  d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z" />
+              </svg>Donar</span></a><a class="nav__link" href="#"><span class="nav__span">
+              <svg class="nav__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor">
+                <title>Files</title>
+                <path
+                  d="M12.367 2.453a.822.822 0 0 0-.576.238L.241 14.213a.822.822 0 0 0-.241.584v.066c0-.323.209-.608.516-.709l7.275-2.318a2.437 2.437 0 0 0 1.584-1.592l2.318-7.267a.757.757 0 0 1 .719-.524zM0 14.863v5.047c0 .904.733 1.637 1.637 1.637h20.726c.904 0 1.637-.733 1.637-1.637V4.09c0-.904-.733-1.637-1.637-1.637h-9.951v.5l.088 9.861c.01 1.175-.962 2.14-2.137 2.14L0 14.862zM12 3.66l-2.148 6.735v.001a2.94 2.94 0 0 1-1.909 1.916l-6.716 2.141h9.136c.905 0 1.638-.734 1.637-1.639zm-10.363.975c-.905 0-1.638.734-1.637 1.638v7.473l9.135-9.111Z" />
+              </svg> Noticias</span></a></nav>
+        <div class="profile"><img class="profile__icon" src="/imagenes/Onepice.png" alt="imagen perfil">
+          <svg class="profile__flecha" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor">
+            <path d="M23.297 14.74L.434 24v-5.263L16.8 12.11l6.497 2.631zm.27-5.371L.433 0v5.263l23.132 9.368V9.37z">
+            </path>
+          </svg>
+          <div class="profile__login"><img class="profile__login-icon" src="/iconos/Icon_perfil_login.svg" alt="">
+            <p class="profile__text">Iniciar sesion</p>
           </div>
         </div>
       </div>
-      <div class="main">
-        <div class="main__container">
-          <div class="hero">
-            <h2 class="hero__title">Tensei shitara slime </h2>
-            <div class="counter">
-              <p class="counter__text">Proximo episodio:</p>
-              <ul class="counter__container">
-                <li class="counter__item">
-                  <p class="counter__number">0 </p>
-                  <p class="counter__type">Días </p>
-                </li>
-                <li class="counter__item">
-                  <p class="counter__number">21 </p>
-                  <p class="counter__type">Horas </p>
-                </li>
-                <li class="counter__item">
-                  <p class="counter__number">17 </p>
-                  <p class="counter__type">Minutos </p>
-                </li>
-                <li class="counter__item">
-                  <p class="counter__number">56 </p>
-                  <p class="counter__type">Segundos </p>
-                </li>
-              </ul>
-            </div>
+    </div>
+    <div class="main">
+      <div class="main__container">
+        <div class="hero">
+          <h2 class="hero__title">Tensei shitara slime </h2>
+          <div class="counter">
+            <p class="counter__text">Proximo episodio:</p>
+            <ul class="counter__container">
+              <li class="counter__item">
+                <p class="counter__number">0 </p>
+                <p class="counter__type">Días </p>
+              </li>
+              <li class="counter__item">
+                <p class="counter__number">21 </p>
+                <p class="counter__type">Horas </p>
+              </li>
+              <li class="counter__item">
+                <p class="counter__number">17 </p>
+                <p class="counter__type">Minutos </p>
+              </li>
+              <li class="counter__item">
+                <p class="counter__number">56 </p>
+                <p class="counter__type">Segundos </p>
+              </li>
+            </ul>
           </div>
-          <div class="main__fondo">
-            <div class="main__izquierda">
-              <div class="main__articulos">
-                <div class="main__faceboock">
-                  <iframe src="https://www.facebook.com/AnimeFlashJP/" width="100%" height="130" scrollin="no" allow="encrypted-media" frameborder="0"></iframe>
-                </div>
+        </div>
+        <div class="main__fondo">
+          <div class="main__izquierda">
+            <div class="main__articulos">
+              <div class="main__faceboock">
+                <iframe src="https://www.facebook.com/AnimeFlashJP/" width="100%" height="130" scrollin="no"
+                  allow="encrypted-media" frameborder="0"></iframe>
               </div>
-              <div class="main__popular"><img class="main__img-popular" src="/imagenes/famoso.png" width="100%"></div>
             </div>
-            <div class="main__derecha">
-              <div class="main__separador"><img class="main__separador-svg" src=".iconos/Icon_derecha_reloj.svg" alt=""><span class="main__separador-text">Ultimos episiodios</span></div>
-              <div class="main__items"><a href="main__episode,media__card-img,# 10,Heion Sedai no Idanten"></a>
-                <div class="media__card-img undefined"></div>
-                <p class="media__number"></p>
-                <p class="media__noun"></p><a class="main__episode" href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10">
-                  <div class="media__card"><img class="media__card-img" src="/imagenes/primero.jpg" alt="">
-                    <p class="media__date">"#" "10"</p>
-                    <p class="media__title">Heion Sedai no Idanten</p>
-                    <div class="main__bar">
-                      <div class="main__effect"></div>
-                    </div>
-                  </div></a><a class="main__episode" href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10">
-                  <div class="media__card"><img class="media__card-img" src="/imagenes/primero.jpg" alt="">
-                    <p class="media__date">"#" "10"</p>
-                    <p class="media__title">Heion Sedai no Idanten</p>
-                    <div class="main__bar">
-                      <div class="main__effect"></div>
-                    </div>
-                  </div></a><a class="main__episode" href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10">
-                  <div class="media__card"><img class="media__card-img" src="/imagenes/primero.jpg" alt="">
-                    <p class="media__date">"#" "10"</p>
-                    <p class="media__title">Heion Sedai no Idanten</p>
-                    <div class="main__bar">
-                      <div class="main__effect"></div>
-                    </div>
-                  </div></a>
-              </div>
+            <div class="main__popular"><img class="main__img-popular" src="/imagenes/famoso.png" width="100%"></div>
+          </div>
+          <div class="main__derecha">
+            <div class="main__separador"><img class="main__separador-svg" src=".iconos/Icon_derecha_reloj.svg"
+                alt=""><span class="main__separador-text">Ultimos episiodios</span></div>
+            <div class="main__items"><a class="hola" href="www.google.com"></a><img src="imagenes/Onepice.png" alt="" />
+              <div class="media__card-img imagenes/Onepice.png"></div>
+              <p class="media__date"># 10</p>
+              <p class="media__title">Heion Sedai no Idanten</p><a class="hola" href="www.youtube.com"></a><img
+                src="imagenes/octava.jpg" alt="" />
+              <div class="media__card-img imagenes/octava.jpg"></div>
+              <p class="media__date"># 12</p>
+              <p class="media__title">Heion Sedai no asd</p><a class="main__episode"
+                href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10">
+                <div class="media__card"><img class="media__card-img" src="/imagenes/primero.jpg" alt="">
+                  <p class="media__date">"#" "10"</p>
+                  <p class="media__title">Heion Sedai no Idanten</p>
+                  <div class="main__bar">
+                    <div class="main__effect"></div>
+                  </div>
+                </div>
+              </a><a class="main__episode" href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10">
+                <div class="media__card"><img class="media__card-img" src="/imagenes/primero.jpg" alt="">
+                  <p class="media__date">"#" "10"</p>
+                  <p class="media__title">Heion Sedai no Idanten</p>
+                  <div class="main__bar">
+                    <div class="main__effect"></div>
+                  </div>
+                </div>
+              </a><a class="main__episode" href="https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10">
+                <div class="media__card"><img class="media__card-img" src="/imagenes/primero.jpg" alt="">
+                  <p class="media__date">"#" "10"</p>
+                  <p class="media__title">Heion Sedai no Idanten</p>
+                  <div class="main__bar">
+                    <div class="main__effect"></div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

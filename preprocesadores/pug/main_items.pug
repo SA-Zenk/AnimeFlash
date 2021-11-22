@@ -1,6 +1,7 @@
-mixin item(href,media,number,noun)
-	a(class!=attributes.class href=href)
+mixin item(link,image,date,title)
+	a(class=attributes.class href=link)
+	img(src=image, alt="")
 	div(class=`media__card-img ${image}`)
-	p.media__date=text 
-	p.media__title=text 
+	p.media__date=date 
+	p.media__title=title 
 
