@@ -1,5 +1,7 @@
 include ./pug/IconArrow.pug
 include ./pug/main_items.pug
+include ./pug/hero_accountant.pug
+include ./pug/nav.pug
 doctype html
 html(lang='en')
 	head
@@ -20,21 +22,14 @@ html(lang='en')
 						span.header__text AnimeFlash
 						span.header__bar
 					nav.nav
-						a.nav__link(href="#")
-							img.nav__icon(src="iconos/libro-header.svg", alt="")
-							| Directorio
-						a.nav__link(href="#") 
-							span.nav__span 
-								include ../iconos/calendar-header.svg
-								|	Emision 
-						a.nav__link(href="#")
-							span.nav__span 
-								include ../iconos/donar-header.svg
-								| Donar
-						a.nav__link(href="#")
-							span.nav__span 
-								include ../iconos/noticias-header.svg
-								|	Noticias
+						+nav("#","iconos/libro-header.svg")(class="nav__link") 
+						| Directorioooo
+						+nav("#","iconos/calendar-header.svg")(class="nav__link")
+						|	Emision 
+						+nav("#","iconos/donar-header.svg")(class="nav__link")
+						| Donar
+						+nav("#","iconos/noticias-header.svg")(class="nav__link")
+						|	Noticias
 					.profile
 						img.profile__icon(src='/imagenes/Onepice.png' alt='imagen perfil')
 						+IconArrow(class="profile__flecha")
@@ -43,23 +38,7 @@ html(lang='en')
 							p.profile__text Iniciar sesion
 			.main
 				.main__container
-					.hero
-						h2.hero__title Tensei shitara slime 
-						.counter
-							p.counter__text Proximo episodio:
-							ul.counter__container
-								li.counter__item
-									p.counter__number 0 
-									p.counter__type Días 
-								li.counter__item
-									p.counter__number 21 
-									p.counter__type Horas 
-								li.counter__item
-									p.counter__number 17 
-									p.counter__type Minutos 
-								li.counter__item
-									p.counter__number 56 
-									p.counter__type Segundos 
+					+accountant("Tensei shitara slime","Proximo episodio:","0","Dias","21","Horas","17","Minutos","56","Segundos")
 					.main__fondo
 						.main__izquierda
 							.main__articulos
@@ -72,26 +51,19 @@ html(lang='en')
 								img.main__separador-svg(src=".iconos/Icon_derecha_reloj.svg", alt="")
 								span.main__separador-text Ultimos episiodios
 							.main__items
-								+item("www.google.com","imagenes/Onepice.png","# 10","Heion Sedai no Idanten")(class="hola")
-								+item("www.youtube.com","imagenes/octava.jpg","# 12","Heion Sedai no asd")(class="hola")
-								a.main__episode(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
-									.media__card
-										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										p.media__date "#" "10"
-										p.media__title Heion Sedai no Idanten
-										.main__bar
-											.main__effect
-								a.main__episode(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
-									.media__card
-										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										p.media__date "#" "10"
-										p.media__title Heion Sedai no Idanten
-										.main__bar
-											.main__effect
-								a.main__episode(href='https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10')
-									.media__card
-										img.media__card-img(src='/imagenes/primero.jpg' alt='')
-										p.media__date "#" "10"
-										p.media__title Heion Sedai no Idanten
-										.main__bar
-											.main__effect
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
+

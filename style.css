@@ -162,10 +162,11 @@ table {
 .hero__title {
   font-size: 1.3em;
   position: relative;
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .counter {
@@ -322,14 +323,6 @@ table {
   cursor: pointer;
   gap: 10px;
 }
-.profile:hover.profile__login {
-  display: flex;
-  min-width: 50vw;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 35px;
-  z-index: 200;
-}
 .profile__icon {
   border-radius: 13px;
   height: 50px;
@@ -340,6 +333,14 @@ table {
   align-items: center;
   top: 0;
   left: 0;
+}
+.profile:hover.profile__login {
+  display: flex;
+  min-width: 50vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 35px;
+  z-index: 200;
 }
 .profile__login-icon {
   height: 18px;
