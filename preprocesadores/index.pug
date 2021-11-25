@@ -22,14 +22,10 @@ html(lang='en')
 						span.header__text AnimeFlash
 						span.header__bar
 					nav.nav
-						+nav("#","iconos/libro-header.svg")(class="nav__link") 
-						| Directorio
-						+nav("#","iconos/calendar-header.svg")(class="nav__link")
-						|	Emision 
-						+nav("#","iconos/donar-header.svg")(class="nav__link")
-						| Donar
-						+nav("#","iconos/noticias-header.svg")(class="nav__link")
-						|	Noticias
+						+nav("#","iconos/libro-header.svg","Directorio")(class="nav__link")
+						+nav("#","iconos/calendar-header.svg","Emision")(class="nav__link")
+						+nav("#","iconos/donar-header.svg","Donar")(class="nav__link")
+						+nav("#","iconos/noticias-header.svg","Noticias")(class="nav__link")
 					.profile
 						img.profile__icon(src='/imagenes/Onepice.png' alt='imagen perfil')
 						+IconArrow(class="profile__flecha")

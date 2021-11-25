@@ -322,6 +322,15 @@ table {
   justify-content: center;
   cursor: pointer;
   gap: 10px;
+  position: relative;
+}
+.profile:hover {
+  display: block;
+  min-width: 50vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 35px;
+  z-index: 200;
 }
 .profile__icon {
   border-radius: 13px;
@@ -331,16 +340,17 @@ table {
 .profile__login {
   display: none;
   align-items: center;
-  top: 0;
-  left: 0;
+  top: 42px;
+  left: -57px;
+  background: #2b3650;
+  position: absolute;
+  height: 39px;
+  padding: 5px;
+  border-bottom: 1px solid;
+  z-index: 9000;
 }
 .profile:hover.profile__login {
   display: flex;
-  min-width: 50vw;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 35px;
-  z-index: 200;
 }
 .profile__login-icon {
   height: 18px;

@@ -1,4 +1,4 @@
-mixin nav(link,image,)
+mixin nav(link,image,text)
 	a(class=attributes.class href=link)
-		img(src=image, alt="")
-		block
+		img.nav__icon(src=image, alt="")
+		|	#{text}
