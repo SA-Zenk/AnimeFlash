@@ -6,14 +6,6 @@
 	gap: 10px;
 	position: relative;
 
-	&:hover {
-		display: block;
-		min-width: 50vw;
-		flex-direction: column;
-		justify-content: flex-start;
-		height: 35px;
-		z-index: 200;
-	}
 
 	&__icon {
 		border-radius: 13px;
@@ -34,9 +26,13 @@
 		z-index: 9000;
 	}
 
-	&:hover.profile__login {
+	&:hover .profile__login {
+		position: absolute;
 		display: flex;
 	}
+
+
+
 
 
 	&__login-icon {
@@ -57,7 +53,8 @@
 		transform: rotate(90deg);
 	}
 
-	&:hover.__flecha {
-		transform: rotateY(270deg);
+	&:hover .profile__flecha {
+		transform: rotate(270deg);
+		transition: .5s;
 	}
 }

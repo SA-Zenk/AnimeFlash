@@ -111,19 +111,23 @@
 		color: #fff;
 		padding: 5px 10px;
 		border-bottom: 2px solid #273242;
+		display: flex;
+		align-items: center;
+	}
+
+	&__separador-svg {
+		height: 20px;
+		width: 22px;
+		color: #fff;
+		font-size: 17px;
+		padding-right: 5px;
+
 	}
 
 	&__separador-text {
 		font-size: 17px;
 		font-family: sans-serif;
 
-	}
-
-	&__separador-svg {
-		height: 17px;
-		width: 17px;
-		color: #fff;
-		font-size: 17px;
 	}
 
 	&__items {
@@ -142,6 +146,7 @@
 		margin-bottom: 10px;
 		text-decoration: none;
 		color: #fff;
+		position: relative;
 	}
 
 	&__card {
@@ -159,15 +164,6 @@
 		flex-direction: column;
 	}
 
-	&__card-img {
-		height: inherit;
-		width: inherit;
-		position: absolute;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
 	&__date {
 		position: absolute;
 		right: 2px;
@@ -181,31 +177,32 @@
 
 	&__title {
 		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		padding: 2px 0;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		padding: 5px 5px;
 		background: rgba(39, 50, 66, .6);
 		font-size: 14px;
 		font-weight: 700;
 		text-align: left;
 	}
 
-
-	&__bar {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 0;
+	&__effect {
 		background: #273242;
+		width: 0px;
+		height: 3px;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		cursor: pointer;
 	}
 
-	&__effect {
+	&:hover .main__effect {
+		transition: 0.5s all ease;
+		width: 250px;
 		background: #2b7fa8;
-		width: 0;
-		transition: .5s;
-		height: inherit;
-		margin: 0 auto;
+		position: absolute;
 	}
 }
