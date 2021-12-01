@@ -1,0 +1,33 @@
+.comment-policy {
+	background-color: rgba(255, 255, 255, .2);
+	color: #fff;
+	width: 274px;
+	height: 134px;
+	border-radius: 4px;
+	padding: 15px;
+	position: relative;
+
+	&__title {
+		font-size: 15px;
+		font-weight: 600;
+		padding-right: 70px;
+		padding-bottom: 5px;
+		line-height: 1.45em;
+
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 1.45em;
+		color: rgba(255, 255, 255, .85);
+		padding-right: 70px;
+	}
+
+	&__icon {
+		height: 60px;
+		width: 60px;
+		position: absolute;
+		top: 46px;
+		right: 5px;
+	}
+}
