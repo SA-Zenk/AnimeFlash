@@ -60,13 +60,35 @@
 		border-radius: 3px;
 	}
 
-
-
 	&__text {
 		color: #687a86;
 		padding: 4px 15px;
 		font-size: 13px;
 		line-height: 18px;
 		font-weight: 500;
+	}
+
+	&__ordering {
+		display: flex;
+		gap: 5px;
+		padding-top: 10px;
+	}
+
+	&__favorite {
+		height: 15px;
+		width: 15px;
+	}
+
+	&__message {
+		color: #fff;
+		font-weight: 700;
+	}
+
+	&__accountant {
+		font-size: 12px;
+		font-weight: 700;
+		padding: 2px 5px 3px;
+		background: #c7c9ee;
+		border-radius: 2px;
 	}
 }

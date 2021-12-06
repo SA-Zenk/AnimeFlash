@@ -656,3 +656,23 @@ table {
   line-height: 18px;
   font-weight: 500;
 }
+.disqus__ordering {
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+}
+.disqus__favorite {
+  height: 15px;
+  width: 15px;
+}
+.disqus__message {
+  color: #fff;
+  font-weight: 700;
+}
+.disqus__accountant {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 5px 3px;
+  background: #c7c9ee;
+  border-radius: 2px;
+}
