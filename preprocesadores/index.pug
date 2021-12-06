@@ -2,6 +2,7 @@ include ./pug/IconArrow.pug
 include ./pug/main_items.pug
 include ./pug/hero_accountant.pug
 include ./pug/nav.pug
+include ./pug/policy.pug
 doctype html
 html(lang='en')
 	head
@@ -64,7 +65,18 @@ html(lang='en')
 								+item("https://animeflash.xyz/ver/45412/heion-sedai-no-idaten-tachi-10","imagenes/primero.jpg","# 10","Heion Sedai no Idanten")(class="main__episode")
 					.main__comments 
 						.comment-policy
-							p.comment-policy__title Política de Comentarios de Animeflash
-							p.comment-policy__text Para poner spoiler hagan estas etiquetas spoiler spoiler que se trgara :v spoiler
-							img.comment-policy__icon(src="iconos/icon_footer_coments.svg", alt="")
+							+policy("Política de Comentarios de Animeflash","Para poner spoiler hagan estas etiquetas &#60spoiler&#63 spoiler que se trgara :v spoiler","iconos/icon_footer_coments.svg")
+						.disqus
+							a.disqus__comment(href="#") Comentarios
+							a.disqus__comunity(href="#") Comunidad 
+							img.disqus__padlock(src="iconos/icon_footer_lock.svg", alt="")
+						.disqus__icons
+							img.disqus__coment(src="iconos/icon_footer_coment.svg", alt="")
+							img.disqus__user(src="iconos/icon_footer_boxuser.svg", alt="")
+							.disqus__arrow
+							.disqus__info
+								p.disqus__text Tu Perfil 
+								p.disqus__text Ocultar Medios 
+								p.disqus__text Editar Configuracion
+								p.disqus__text Cerrar Sesion
 

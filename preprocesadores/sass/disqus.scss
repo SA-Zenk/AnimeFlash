@@ -1,0 +1,72 @@
+.disqus {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 32px;
+
+	&__comment {
+		text-decoration: none;
+		color: #fff;
+		padding: 12px 0;
+		font-size: 15px;
+		font-weight: 700;
+		border-bottom: 2px solid #1C6EA4;
+	}
+
+	&__comunity {
+		text-decoration: none;
+		color: #fff;
+		padding: 12px 0;
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	&__icons {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 8px;
+		border-bottom: 2px solid #5d626a82;
+	}
+
+	&__arrow {
+		display: flex;
+		width: 10px;
+		height: 10px;
+		padding: 1px;
+		border-top: solid 5px;
+		border-right: solid 5px;
+		transform: rotate(135deg);
+		color: #fff;
+		cursor: pointer;
+		position: relative;
+
+		&:hover+.disqus__info {
+			display: flex;
+			position: absolute;
+		}
+	}
+
+	&__info {
+		display: none;
+		width: 146px;
+		height: 104px;
+		flex-direction: column;
+		background: #fff;
+		position: absolute;
+		bottom: -2081px;
+		right: 21px;
+		border: 2px solid #687a86;
+		border-radius: 3px;
+	}
+
+
+
+	&__text {
+		color: #687a86;
+		padding: 4px 15px;
+		font-size: 13px;
+		line-height: 18px;
+		font-weight: 500;
+	}
+}

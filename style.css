@@ -557,34 +557,102 @@ table {
   background: #273242;
   padding: 15px;
   border-radius: 3px;
+  height: 500px;
 }
 
 .comment-policy {
   background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
-  width: 274px;
-  height: 134px;
+  width: 288px;
+  height: 142px;
   border-radius: 4px;
   padding: 15px;
+  margin-bottom: 25px;
+  margin-top: 10px;
   position: relative;
 }
 .comment-policy__title {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   padding-right: 70px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
   line-height: 1.45em;
 }
 .comment-policy__text {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.45em;
   color: rgba(255, 255, 255, 0.85);
   padding-right: 70px;
+  padding-bottom: 4px;
 }
 .comment-policy__icon {
   height: 60px;
   width: 60px;
   position: absolute;
   top: 46px;
-  right: 5px;
+  right: 14px;
+}
+
+.disqus {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+.disqus__comment {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid #1C6EA4;
+}
+.disqus__comunity {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+.disqus__icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #5d626a82;
+}
+.disqus__arrow {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-top: solid 5px;
+  border-right: solid 5px;
+  transform: rotate(135deg);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.disqus__arrow:hover + .disqus__info {
+  display: flex;
+  position: absolute;
+}
+.disqus__info {
+  display: none;
+  width: 146px;
+  height: 104px;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  bottom: -2081px;
+  right: 21px;
+  border: 2px solid #687a86;
+  border-radius: 3px;
+}
+.disqus__text {
+  color: #687a86;
+  padding: 4px 15px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
 }
