@@ -7,13 +7,21 @@
 	padding: 15px;
 	margin-bottom: 25px;
 	margin-top: 10px;
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
 
 	&__title {
 		font-size: 17px;
 		font-weight: 600;
-		padding-right: 70px;
-		padding-bottom: 6px;
 		line-height: 1.45em;
 
 	}
@@ -22,15 +30,10 @@
 		font-size: 15px;
 		line-height: 1.45em;
 		color: rgba(255, 255, 255, .85);
-		padding-right: 70px;
-		padding-bottom: 4px;
 	}
 
 	&__icon {
 		height: 60px;
 		width: 60px;
-		position: absolute;
-		top: 46px;
-		right: 14px;
 	}
 }
