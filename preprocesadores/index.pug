@@ -3,6 +3,11 @@ include ./pug/main_items.pug
 include ./pug/hero_accountant.pug
 include ./pug/nav.pug
 include ./pug/policy.pug
+include ./pug/disqus.pug
+include ./pug/disqus_icons.pug
+include ./pug/disqus_info.pug
+include ./pug/disqus_ordering.pug
+include ./pug/disqus_down.pug
 doctype html
 html(lang='en')
 	head
@@ -67,20 +72,30 @@ html(lang='en')
 						.comment-policy
 							+policy("Política de Comentarios de Animeflash","Para poner spoiler hagan estas etiquetas &#60spoiler&#63 spoiler que se trgara :v spoiler","iconos/icon_footer_coments.svg")
 						.disqus
-							a.disqus__comment(href="#") Comentarios
-							a.disqus__comunity(href="#") Comunidad 
-							img.disqus__padlock(src="iconos/icon_footer_lock.svg", alt="")
+							+disqus("/#","Comentarios","#","Comunidad","iconos/icon_footer_lock.svg")(class="disqus__comment")
 						.disqus__icons
-							img.disqus__coment(src="iconos/icon_footer_coment.svg", alt="")
-							img.disqus__user(src="iconos/icon_footer_boxuser.svg", alt="")
+							+disqus_icons("iconos/icon_footer_coment.svg","iconos/icon_footer_boxuser.svg")
 							.disqus__arrow
 							.disqus__info
-								p.disqus__text Tu Perfil 
-								p.disqus__text Ocultar Medios 
-								p.disqus__text Editar Configuracion
-								p.disqus__text Cerrar Sesion
+								+disqus_info("Tu Perfil","Ocutal Medios","Editar Configuracion","Cerrar Sesion")
 						.disqus__ordering 
-							img.disqus__favorite(src="iconos/icon_footer_favorite.svg", alt="")
-							p.disqus__message Favorite 
-							p.disqus__accountant 3589
-
+							+disqus_ordering("iconos/icon_footer_favorite.svg","Favorite","3589")
+						.disqus__list
+							p.disqus__new ordenar por el mas nuevo
+							.disqus__drop
+							.disqus__down
+								+disqus_down("Mejor","Lo mas nuevo","Mas antiguo")
+						.disqus__coments
+							.disqus__discussion
+								p.disqus__enter Unete a la discusion...
+							.disqus__posts
+								p.disqus__fresh Mostrar 350 Nuevos Comentarios
+						.disqus__post
+							.disqus__username
+								img.disqus__avatar(src="imagenes/perfil_img.jpg", alt="")
+								.disqus__text-container
+									p.disqus__nick Daku 
+									p.disqus__last-time hace una hora
+								.disqus__opcions
+									p.disqus__hide -
+									p.disqus__drop

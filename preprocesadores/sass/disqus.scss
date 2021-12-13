@@ -59,6 +59,7 @@
 		right: 0px;
 		border: 2px solid #687a86;
 		border-radius: 3px;
+		z-index: 10;
 	}
 
 	&__text {
@@ -71,6 +72,7 @@
 
 	&__ordering {
 		display: flex;
+		align-items: center;
 		gap: 5px;
 		padding-top: 10px;
 	}
@@ -87,9 +89,133 @@
 
 	&__accountant {
 		font-size: 12px;
-		font-weight: 700;
 		padding: 2px 5px 3px;
-		background: #c7c9ee;
+		background: #fff;
 		border-radius: 2px;
+		height: 17px;
+		width: 32px;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 9px;
+		position: relative;
+		padding-bottom: 21px;
+	}
+
+	&__new {
+		color: #eee;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	&__drop {
+		display: flex;
+		width: 10px;
+		height: 10px;
+		padding: 1px;
+		border-top: solid 5px;
+		border-right: solid 5px;
+		transform: rotate(135deg);
+		color: #fff;
+		cursor: pointer;
+
+		&:hover+.disqus__down {
+			display: flex;
+			position: absolute;
+		}
+	}
+
+	&__down {
+		display: none;
+		width: 118px;
+		height: 87px;
+		flex-direction: column;
+		background: #fff;
+		position: absolute;
+		bottom: -73px;
+		right: 0px;
+		border: 2px solid #687a86;
+		border-radius: 3px;
+	}
+
+	&__coments {
+		display:flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	&__discussion {
+		background: #fff;
+		height: 44px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		border-radius: 4px;
+	}
+
+	&__enter {
+		padding-left: 10px;
+		font-size: 16px;
+		color: #687a86;
+		line-height: 30px;
+		cursor: text;
+	}
+
+	&__posts {
+		background: #2e9fff;
+		height: 40px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		border-radius: 4px;
+	}
+
+	&__fresh {
+		border-radius: 4px;
+		color: #fff;
+		font-size: 14px;
+		padding-left: 20px;
+	}
+
+	&__post {
+		padding-top: 15px;
+	}
+
+	&__username {
+		display: flex;
+		align-items: center;
+	}
+
+	&__avatar {
+		height: 30px;
+		width: 30px;
+		border-radius: 3px;
+	}
+
+	&__text-container {
+		display: flex;
+		flex-direction: column;
+		padding-left: 11px;
+	}
+
+	&__nick {
+		font-weight: 700;
+		color: rgb(0, 0, 238);
+		font-size: 15px;
+		cursor: pointer;
+	}
+
+	&__last-time {
+		color: rgba(255, 255, 255, .6);
+		font-size: 12px;
+		font-weight: 500;
+		padding-top: 5px;
+	}
+
+	&__opcions {
+		display: flex;
 	}
 }
