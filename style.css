@@ -558,6 +558,15 @@ table {
   border-radius: 3px;
   height: 100%;
 }
+.main__anime-top {
+  display: flex;
+  justify-content: center;
+  padding-top: 19px;
+}
+.main__img-top {
+  height: 800px;
+  width: 200px;
+}
 
 .comment-policy {
   background-color: rgba(255, 255, 255, 0.2);
@@ -723,6 +732,7 @@ table {
 .disqus__coments {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 25px;
 }
 .disqus__discussion {
@@ -756,10 +766,16 @@ table {
 }
 .disqus__post {
   padding-top: 15px;
+  padding-bottom: 18px;
+}
+.disqus__header-comment {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  gap: 64px;
 }
 .disqus__username {
   display: flex;
-  align-items: center;
 }
 .disqus__avatar {
   height: 30px;
@@ -785,4 +801,98 @@ table {
 }
 .disqus__opcions {
   display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.disqus__hide {
+  display: block;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 22px;
+  width: 22px;
+  line-height: 22px;
+  border-radius: 3px;
+  text-align: center;
+}
+.disqus__chat {
+  color: #fff;
+  line-height: 21px;
+  padding-top: 5px;
+}
+.disqus__footer {
+  display: flex;
+  align-items: center;
+}
+.disqus__arrow-up {
+  color: rgba(172, 167, 167, 0.829);
+}
+.disqus__pipe {
+  color: rgba(226, 226, 226, 0.932);
+}
+.disqus__arrow-down {
+  color: rgba(172, 167, 167, 0.932);
+}
+.disqus__answer {
+  color: rgba(172, 167, 167, 0.932);
+  padding-left: 5px;
+}
+.disqus__response {
+  display: flex;
+}
+.disqus__space {
+  flex-shrink: 0;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.disqus__line {
+  height: 100%;
+  width: 5px;
+  background-color: #687a86;
+}
+.disqus__more-comment {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 31px;
+  width: 100%;
+  border-radius: 3px;
+}
+.disqus__load {
+  color: #060606c4;
+}
+.disqus__container-footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+.disqus__email {
+  height: 18px;
+  width: 18px;
+  color: #acb1b7;
+}
+.disqus__subscribe {
+  color: #acb1b7;
+  font-size: 12px;
+}
+.disqus__data {
+  display: flex;
+  gap: 5px;
+}
+.disqus__danger {
+  height: 15px;
+  width: 15px;
+}
+.disqus__nostell {
+  font-size: 12px;
+  color: #fff;
+}
+.disqus__big {
+  color: #fff;
+  font-size: 26px;
 }
