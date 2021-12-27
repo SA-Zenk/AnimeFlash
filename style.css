@@ -158,6 +158,7 @@ table {
   top: 0;
   left: 0;
   background: linear-gradient(90deg, rgba(16, 16, 16, 0.5), rgba(10, 10, 10, 0.95));
+  cursor: pointer;
 }
 .hero__title {
   font-size: 1.3em;
@@ -265,6 +266,7 @@ table {
   padding: 0 10px;
   font-size: 1.5em;
   text-decoration: none;
+  cursor: pointer;
 }
 .header__bar {
   height: 5px;
@@ -562,10 +564,82 @@ table {
   display: flex;
   justify-content: center;
   padding-top: 19px;
+  padding-bottom: 19px;
 }
 .main__img-top {
   height: 800px;
   width: 200px;
+}
+.main__face {
+  background-image: url(imagenes/face_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 238px;
+  height: 108px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.main__header-face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6px;
+}
+.main__avatar {
+  width: 54px;
+  height: 54px;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+.main__header-information {
+  padding-left: 5px;
+}
+.main__flash {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+}
+.main__like {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(29, 18, 18, 0.9);
+  font-size: 12px;
+}
+.main__like-page {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  width: 143px;
+}
+.main__face-svg {
+  height: 12px;
+  width: 12px;
+}
+.main__likepage {
+  font-size: 13px;
+}
+.main__footer {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  height: 60px;
+  width: 318px;
+  background: #273242;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+.main__year {
+  color: #A8A8AB;
+  font-size: 13px;
+}
+.main__server {
+  color: #A8A8AB;
+  font-size: 12px;
 }
 
 .comment-policy {
@@ -630,6 +704,12 @@ table {
   gap: 8px;
   border-bottom: 2px solid #5d626a82;
   position: relative;
+}
+.disqus__coment {
+  cursor: pointer;
+}
+.disqus__user {
+  cursor: pointer;
 }
 .disqus__arrow {
   display: flex;
@@ -757,6 +837,7 @@ table {
   display: flex;
   align-items: center;
   border-radius: 4px;
+  cursor: pointer;
 }
 .disqus__fresh {
   border-radius: 4px;
@@ -859,6 +940,7 @@ table {
   height: 31px;
   width: 100%;
   border-radius: 3px;
+  cursor: pointer;
 }
 .disqus__load {
   color: #060606c4;

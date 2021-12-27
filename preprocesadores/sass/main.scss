@@ -234,10 +234,95 @@
 		display: flex;
 		justify-content: center;
 		padding-top: 19px;
+		padding-bottom: 19px;
 	}
 
 	&__img-top {
 		height: 800px;
 		width: 200px;
+	}
+
+	&__face {
+		background-image: url(imagenes/face_background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 238px;
+		height: 108px;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+
+	&__header-face {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 6px;
+	}
+
+	&__avatar {
+		width: 54px;
+		height: 54px;
+		border: 2px solid #fff;
+		box-shadow: 0 1px 6px rgb(0 0 0 / 50%);
+	}
+
+	&__header-information {
+		padding-left: 5px;
+	}
+
+
+	&__flash {
+		color: #fff;
+		text-shadow: 0 2px 4px rgb(0 0 0 / 90%);
+		font-size: 18px;
+	}
+
+	&__like {
+		color: #fff;
+		text-shadow: 0 2px 4px rgba(29, 18, 18, 0.9);
+		font-size: 12px;
+	}
+
+	&__like-page {
+		display: flex;
+		background: #fff;
+		align-items: center;
+		justify-content: center;
+		height: 18px;
+		width: 143px;
+	}
+
+	&__face-svg {
+		height: 12px;
+		width: 12px;
+	}
+
+	&__likepage {
+		font-size: 13px;
+	}
+
+	&__footer {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+		height: 60px;
+		width: 318px;
+		background: #273242;
+		justify-content: center;
+		align-items: center;
+		padding: 32px;
+	}
+
+	&__year {
+		color: #A8A8AB;
+		font-size: 13px;
+	}
+
+	&__server {
+		color: #A8A8AB;
+		font-size: 12px;
 	}
 }
